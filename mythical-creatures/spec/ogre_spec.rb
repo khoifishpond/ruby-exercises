@@ -1,5 +1,6 @@
-require './spec/spec-helper'
+require 'rspec'
 require './lib/ogre'
+require './lib/human'
 
 RSpec.describe Ogre do
   it 'has a name' do
@@ -68,7 +69,7 @@ RSpec.describe Ogre do
 
     ogre.encounter(human)
     ogre.encounter(human)
-
+    expect(human.encounter_counter).to eq(3)
     expect(ogre.swings).to eq(1)
     expect(human.notices_ogre?).to be true
   end
@@ -88,7 +89,7 @@ RSpec.describe Ogre do
     ogre = Ogre.new('Brak')
     human = Human.new
 
-    6.times { ogre.encounter(human) }
+    12.times { ogre.encounter(human) }
 
     expect(human.knocked_out?).to be true
 
