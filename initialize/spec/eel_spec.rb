@@ -1,5 +1,5 @@
 require 'rspec'
-require_relative '../lib/eel'
+require '../lib/eel'
 
 RSpec.describe Eel do
   it 'exists' do

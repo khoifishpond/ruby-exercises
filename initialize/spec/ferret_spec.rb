@@ -1,5 +1,5 @@
-recuire 'rspec'
-require_relative '../lib/ferret'
+require 'rspec'
+require '../lib/ferret'
 
 RSpec.describe Ferret do
   it 'exists' do

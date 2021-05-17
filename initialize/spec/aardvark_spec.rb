@@ -1,5 +1,5 @@
 require 'rspec'
-require_relative '../lib/aardvark'
+require '../lib/aardvark'
 
 RSpec.describe Aardvark do
   it 'exists' do

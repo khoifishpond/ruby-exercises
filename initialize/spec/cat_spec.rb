@@ -1,5 +1,5 @@
 require 'rspec'
-require_relative '../lib/cat'
+require '../lib/cat'
 
 RSpec.describe Cat do
   it 'exists' do

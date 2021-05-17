@@ -1,5 +1,5 @@
 require 'rspec'
-require_relative '../lib/beaver'
+require '../lib/beaver'
 
 RSpec.describe Beaver do
   it 'exists' do

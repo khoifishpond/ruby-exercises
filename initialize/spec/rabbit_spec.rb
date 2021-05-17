@@ -20,7 +20,7 @@ RSpec.describe Rabbit do
     roberto = Rabbit.new({name: "Roberto", num_syllables: 3})
 
     expect(ralph.name).to eq("Ralph")
-    expect(rita.name).to eq("Rita Rabbit")
+    expect(rita.name).to eq("Rita")
     expect(roberto.name).to eq("Roberto")
   end
 end
